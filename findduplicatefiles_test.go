@@ -71,6 +71,14 @@ func TestGenerateHash(t *testing.T) {
 	if generated != expected {
 		t.Errorf("generateHash failed: Expected %v got %v", expected, generated)
 	}
+
+	expected = "4a1e67f2fe1d1cc7b31d0ca2ec441da4778203a036a77da10344c85e24ff0f92"
+
+	generated = generateHash(file, 12)
+
+	if generated != expected {
+		t.Errorf("generateHash failed: Expected %v got %v", expected, generated)
+	}
 }
 
 func inSlice(s1 [][]string, s2 []string) bool {

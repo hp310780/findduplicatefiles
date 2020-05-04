@@ -17,7 +17,7 @@ expensive hashes on large files.
 ### Installing
 
 ```
-> go get -u github.com/hp310780/findduplicatefiles
+> go get -v github.com/hp310780/findduplicatefiles
 ```
 To use as a Go package:
 ```
