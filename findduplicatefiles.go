@@ -27,10 +27,10 @@ func main() {
 	fmt.Println(duplicates)
 }
 
+// Returns duplicates in the given directory, using chunk to determine the initial hash size. 1 is full file, 2 is half etc.
+// First groups files by size, eliminating unique files. Then, finds duplicates by hash.
+// Use a larger chunk (> 1) for directories of large files.
 func FindDuplicateFiles(dir string, chunk int) [][]string {
-	// First group files by size, eliminating unique files.
-	// Then, find duplicates by hash.
-
 	// [[dup1, dup2], [dupA1, dupA2]] etc.
 	duplicates := make([][]string, 0)
 
