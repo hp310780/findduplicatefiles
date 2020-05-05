@@ -21,11 +21,11 @@ expensive hashes on large files.
 ```
 To use as a Go package:
 ```
-import "findduplicatefiles"
+import "github.com/hp310780/findduplicatefiles"
 
 // Args: path to the directory to search for duplicates
 // chunk size for initial hash. 1 indicates full file, 2 is half etc.
-find_duplicate_files.FindDuplicateFiles("/path/to/dir", 1)
+duplicates := find_duplicate_files.FindDuplicateFiles("/path/to/dir", 1)
 ```
 
 ## Running the tests
@@ -33,7 +33,7 @@ find_duplicate_files.FindDuplicateFiles("/path/to/dir", 1)
 To run the tests, please use the following commands:
 
 ```
-> cd <FindDuplicateFiles directory>
+> cd <findduplicatefiles directory>
 > go test -v
 ```
 
