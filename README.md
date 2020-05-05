@@ -1,6 +1,7 @@
 # findduplicatefiles
 
 ![Go](https://github.com/hp310780/findduplicatefiles/workflows/Go/badge.svg?branch=master)
+[![Go Report Card](https://goreportcard.com/badge/github.com/hp310780/findduplicatefiles)](https://goreportcard.com/report/github.com/hp310780/findduplicatefiles)
 
 The Go implementation of [find-duplicate-files](https://github.com/hp310780/find-duplicate-files) to find duplicate files in a directory. This Go implementation does not handle symlinked directories.
 
